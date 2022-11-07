@@ -14,7 +14,7 @@ const Main = ({ colorScheme }) => {
           <Text className="text-xl font-bold dark:text-light">Chadi Rabii</Text>
           <Text
             className="text-primary "
-            onPress={() => Linking.openURL("https://www.facebook.com/chadi.rabii.3")}
+            onPress={() => Linking.openURL("https://github.com/chadirabii")}
           >
             @chadirabii
           </Text>
