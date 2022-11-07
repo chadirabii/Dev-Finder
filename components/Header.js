@@ -1,15 +1,21 @@
-import { StyleSheet, Text, View } from "react-native";
-import React from "react";
-import tw from "twrnc";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Feather } from "@expo/vector-icons";
 
-const Header = () => {
+const Header = ({ colorScheme, toggleColorScheme }) => {
   return (
-    <View style={tw`bg-[#141d2f] mt-5 w-full  `}>
-
-      <Text style={tw`text-xl ml-3 font-bold text-[#f6f8ff]`}>
+    <View className=" flex-row justify-between mt-5 w-full rounded-xl">
+      <Text className="text-xl font-bold dark:text-light">
         Github Developer Sercher
       </Text>
-
+      <View className="flex-row items-center">
+        <TouchableOpacity onPress={toggleColorScheme}>
+          {colorScheme === "light" ? (
+            <Feather name="sun" size={26} color="black" />
+          ) : (
+            <Feather name="moon" size={24} color="#fff" />
+          )}
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
