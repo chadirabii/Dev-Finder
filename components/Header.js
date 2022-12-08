@@ -1,9 +1,9 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 import { Feather } from "@expo/vector-icons";
 
 const Header = ({ colorScheme, toggleColorScheme }) => {
   return (
-    <View className=" flex-row justify-between mt-5 w-full rounded-xl">
+    <View className="flex-row justify-between w-full  py-3 px-2 rounded-xl">
       <Text className="text-xl font-bold dark:text-light">
         Github Developer Sercher
       </Text>
@@ -21,5 +21,3 @@ const Header = ({ colorScheme, toggleColorScheme }) => {
 };
 
 export default Header;
-
-const styles = StyleSheet.create({});

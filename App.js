@@ -1,20 +1,39 @@
 import { StatusBar } from "expo-status-bar";
 import { useColorScheme } from "nativewind";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import SearchBar from "./components/SearchBar";
+import axios from "axios";
+import { useState } from "react";
 
 export default function App() {
   const { colorScheme, toggleColorScheme } = useColorScheme();
-  
+  const [user, setUser] = useState("");
+  const [data, setData] = useState({});
+
+  const getData = () => {
+    axios
+      .get(`https://api.github.com/users/${user}`)
+      .then((response) => {
+        setData(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   return (
     <View className="bg-light dark:bg-darkBlue" style={styles.container}>
       <Header colorScheme={colorScheme} toggleColorScheme={toggleColorScheme} />
-      <SearchBar colorScheme={colorScheme}  />
-      <Main colorScheme={colorScheme} />
-      <StatusBar style="auto" />
+      <SearchBar
+        user={user}
+        getData={getData}
+        setUser={setUser}
+        colorScheme={colorScheme}
+      />
+      <Main data={data} colorScheme={colorScheme} />
+      <StatusBar style={colorScheme === "light" ? "dark" : "light"} />
     </View>
   );
 }
@@ -22,7 +41,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 10,
-    paddingVertical: 10,
+    paddingHorizontal: 15,
+    paddingVertical: 25,
   },
 });
