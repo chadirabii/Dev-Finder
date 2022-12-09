@@ -10,7 +10,6 @@ This is a mobile application to the [GitHub user search app challenge on Fronten
   - [Continued development](#continued-development)
   - [Run Locally](#Run-Locally)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ### Screenshot
