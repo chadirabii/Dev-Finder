@@ -6,7 +6,6 @@ This is a mobile application to the [GitHub user search app challenge on Fronten
 ## Table of contents
   - [Built with](#built-with)
   - [Screenshots](#screenshot)
-  - [What I learned](#what-i-learned)
   - [Run Locally](#Run-Locally)
 - [Author](#author)
 
@@ -21,13 +20,6 @@ This is a mobile application to the [GitHub user search app challenge on Fronten
 
 
 
-
-
-
-
-### What I learned
-
-I learned React hooks, mobile-first workflow, and working with API.
 
 ## Run Locally
 
