@@ -10,6 +10,7 @@ This is a mobile application to the [GitHub user search app challenge on Fronten
   - [Run Locally](#Run-Locally)
 - [Author](#author)
 
+### Built with
 - [ReactNative](https://reactjs.org/) - JS library
 - [NativeWind](https://www.nativewind.dev) - Css Framework
 
@@ -21,7 +22,6 @@ This is a mobile application to the [GitHub user search app challenge on Fronten
 
 
 
-### Built with
 
 
 
