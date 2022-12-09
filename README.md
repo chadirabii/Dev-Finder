@@ -12,7 +12,7 @@ This is a mobile application to the [GitHub user search app challenge on Fronten
 
 ### Built with
 - [ReactNative](https://reactjs.org/) - JS library
-- [NativeWind](https://www.nativewind.dev) - Css Framework
+- [NativeWind](https://www.nativewind.dev) - css Framework
 
 ### Screenshot
 
