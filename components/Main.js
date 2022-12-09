@@ -36,7 +36,7 @@ const Main = (props) => {
               className="text-primary "
               onPress={() => Linking.openURL(props.data.html_url)}
             >
-              {props.data.login ? props.data.login : "octobat"}
+              {props.data.login ? "@" + props.data.login : "@octobat"}
             </Text>
             <Text className="text-primaryLight">
               Joined{" "}
