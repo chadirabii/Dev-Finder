@@ -1,4 +1,4 @@
-# DevFinder - FrontendMentor Challenge - GitHub user search app solution
+# DevFinder - FrontendMentor Challenge 
 
 
 This is a mobile application to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). 
