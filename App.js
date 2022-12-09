@@ -17,6 +17,7 @@ export default function App() {
       .get(`https://api.github.com/users/${user}`)
       .then((response) => {
         setData(response.data);
+        console.log();
       })
       .catch((error) => {
         console.log(error);
@@ -33,7 +34,7 @@ export default function App() {
         colorScheme={colorScheme}
       />
       <Main data={data} colorScheme={colorScheme} />
-      <StatusBar style={colorScheme === "light" ? "dark" : "light"} />
+      <StatusBar style={colorScheme === "dark" ? "light" : "dark"} />
     </View>
   );
 }

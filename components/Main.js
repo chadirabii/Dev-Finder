@@ -7,13 +7,14 @@ const Main = (props) => {
     <View className="px-5 py-8 mt-3 bg-white shadow-xl dark:bg-lightBlue shadow-black rounded-xl ">
       <View className="flex-row items-center ">
         <>
-          {!props.data.avatar_url  ? (
+          {!props.data.avatar_url ? (
             <Image
               className="flex-row w-20 h-20 rounded-full "
-              source={require("../assets/user.png")}
+              source={require("../assets/user1.gif")}
             />
           ) : (
             <Image
+              onPress={() => Linking.openURL(props.data.html_url)}
               className="flex-row w-20 h-20 rounded-full "
               source={{
                 uri: props.data.avatar_url,
@@ -27,25 +28,22 @@ const Main = (props) => {
             {props.data.name ? props.data.name : "The Octobat"}
           </Text>
           <Text
+            disabled={!props.data.html_url}
             className="text-primary "
-            onPress={() =>
-              Linking.openURL(
-                props.data.html_url
-                  ? props.data.html_url
-                  : "http://github.com/chadirabii"
-              )
-            }
+            onPress={() => Linking.openURL(props.data.html_url)}
           >
             {props.data.login ? props.data.login : "octobat"}
           </Text>
           <Text className="text-primaryLight">
             Joined{" "}
-            {props.data.created_at ? props.data.created_at : "05 Aug 2022"}
+            {props.data.created_at
+              ? props.data.created_at.slice(0, 10)
+              : "2022-11-14"}
           </Text>
         </View>
       </View>
       <Text className="mt-4 dark:text-light ">
-        {props.data.bio ? props.data.bio : "This profile has no bio"}
+        {props.data.bio ? props.data.bio : "This profile have no bio"}
       </Text>
 
       <View className="flex-row items-center justify-between px-4 py-5 mt-4 bg-light dark:bg-darkBlue rounded-xl ">
@@ -75,7 +73,15 @@ const Main = (props) => {
             size={28}
             color={props.colorScheme === "light" ? "black" : "#fff"}
           />
-          <Text className="ml-3 font-light text-base dark:text-light">
+          <Text
+            disabled={!props.data.location}
+            onPress={() =>
+              Linking.openURL(
+                `https://www.google.com/maps/place/${props.data.location}`
+              )
+            }
+            className="ml-3 font-light text-base dark:text-light"
+          >
             {props.data.location ? props.data.location : "Not available"}
           </Text>
         </View>
@@ -85,7 +91,11 @@ const Main = (props) => {
             size={28}
             color={props.colorScheme === "light" ? "black" : "#fff"}
           />
-          <Text className="ml-3 font-light text-base dark:text-light">
+          <Text
+            disabled={!props.data.blog}
+            onPress={() => Linking.openURL(props.data.blog)}
+            className="ml-3 font-light text-base dark:text-light"
+          >
             {props.data.blog ? props.data.blog : "Not available"}
           </Text>
         </View>
@@ -95,7 +105,15 @@ const Main = (props) => {
             size={28}
             color={props.colorScheme === "light" ? "black" : "#fff"}
           />
-          <Text className="ml-3 font-light text-base dark:text-light">
+          <Text
+            disabled={!props.data.twitter_username}
+            onPress={() =>
+              Linking.openURL(
+                `https://twitter.com/${props.data.twitter_username}`
+              )
+            }
+            className="ml-3 font-light text-base dark:text-light"
+          >
             {props.data.twitter_username
               ? props.data.twitter_username
               : "Not available"}
@@ -107,7 +125,15 @@ const Main = (props) => {
             size={28}
             color={props.colorScheme === "light" ? "black" : "#fff"}
           />
-          <Text className="ml-3 font-light text-base dark:text-light">
+          <Text
+            disabled={!props.data.company}
+            onPress={() =>
+              Linking.openURL(
+                `https://www.google.com/search?q=${props.data.company}`
+              )
+            }
+            className="ml-3 font-light text-base dark:text-light"
+          >
             {props.data.company ? props.data.company : "Not available"}
           </Text>
         </View>
