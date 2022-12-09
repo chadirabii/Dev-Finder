@@ -27,7 +27,7 @@ const SearchBar = ({ colorScheme, setUser, getData, user }) => {
       </View>
       <TouchableOpacity
         disabled={user === "" ? true : false}
-        onPress={(getData, Keyboard.dismiss)}
+        onPress={getData}
         className="px-4 py-2 bg-primary rounded-xl "
       >
         <Text className="text-light ">Search</Text>

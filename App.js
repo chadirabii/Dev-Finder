@@ -28,6 +28,7 @@ export default function App() {
       .get(`https://api.github.com/users/${user}`)
       .then((response) => {
         setData(response.data);
+        Keyboard.dismiss();
       })
       .catch((error) => {
         ToastAndroid.show(
@@ -36,6 +37,7 @@ export default function App() {
           ToastAndroid.BOTTOM
         );
         console.log(error);
+        Keyboard.dismiss();
       });
   };
 

@@ -1,4 +1,4 @@
-import { Image, Linking, Text, View } from "react-native";
+import { Image, Linking, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 import { Entypo, Octicons } from "@expo/vector-icons";
 
@@ -14,13 +14,16 @@ const Main = (props) => {
                 source={require("../assets/user.gif")}
               />
             ) : (
-              <Image
+              <TouchableOpacity
                 onPress={() => Linking.openURL(props.data.html_url)}
-                className="flex-row w-20 h-20 rounded-full "
-                source={{
-                  uri: props.data.avatar_url,
-                }}
-              />
+              >
+                <Image
+                  className="flex-row w-20 h-20 rounded-full "
+                  source={{
+                    uri: props.data.avatar_url,
+                  }}
+                />
+              </TouchableOpacity>
             )}
           </>
 
