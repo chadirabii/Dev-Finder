@@ -4,13 +4,15 @@
 This is a mobile application to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). 
 
 ## Table of contents
-  - [Screenshots](#screenshot)
   - [Built with](#built-with)
+  - [Screenshots](#screenshot)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Run Locally](#Run-Locally)
 - [Author](#author)
 
+- [ReactNative](https://reactjs.org/) - JS library
+- [NativeWind](https://www.nativewind.dev) - Css Framework
 
 ### Screenshot
 
@@ -22,8 +24,7 @@ This is a mobile application to the [GitHub user search app challenge on Fronten
 
 ### Built with
 
-- [ReactNative](https://reactjs.org/) - JS library
-- [NativeWind](https://www.nativewind.dev) - For styles
+
 
 ### What I learned
 
