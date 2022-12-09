@@ -1,33 +1,34 @@
 {
   "expo": {
-    "name": "github-searcher",
-    "slug": "github-searcher",
+    "name": "DevFinder",
+    "slug": "DevFinder",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/icon1.png",
+    "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#1e2a47"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/adaptive.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.chadirabii.DevFinder"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "extra": {
+      "eas": {
+        "projectId": "58cfb6fb-6372-46e3-88b4-07d09bf9f220"
+      }
     }
   }
 }

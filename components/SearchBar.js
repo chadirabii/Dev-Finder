@@ -1,4 +1,5 @@
 import {
+  Keyboard,
   StyleSheet,
   Text,
   TextInput,
@@ -21,11 +22,12 @@ const SearchBar = ({ colorScheme, setUser, getData, user }) => {
           className="h-10  ml-3 dark:text-light w-48 "
           placeholderTextColor={colorScheme === "light" ? "#000" : "#fff"}
           placeholder="Search"
+          onSubmitEditing={(Keyboard.dismiss, setUser)}
         />
       </View>
       <TouchableOpacity
         disabled={user === "" ? true : false}
-        onPress={getData}
+        onPress={(getData, Keyboard.dismiss)}
         className="px-4 py-2 bg-primary rounded-xl "
       >
         <Text className="text-light ">Search</Text>
