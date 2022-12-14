@@ -47,7 +47,7 @@ Start the server
   npm start
 ```
 
-## Author
+## Author : Chadi Rabii
 
 - Github - [Github](https://github.com/chadirabii)
 - LinkedIn - [Chadi Rabii](www.linkedin.com/in/chadirabii)
