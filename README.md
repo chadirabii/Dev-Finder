@@ -7,7 +7,7 @@ This is a mobile application to the [GitHub user search app challenge on Fronten
   - [Built with](#built-with)
   - [Screenshots](#screenshot)
   - [Run Locally](#Run-Locally)
-- [Author](#author)
+- [Author](#author--chadi-rabii)
 
 ### Built with
 - [ReactNative](https://reactjs.org/) - JS library
