@@ -26,13 +26,13 @@ This is a mobile application to the [GitHub user search app challenge on Fronten
 Clone the project
 
 ```bash
-  git clone https://github.com/chadirabii/github-searcher
+  git clone https://github.com/chadirabii/dev-finder
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-github-searcher
+  cd Dev-Finder
 ```
 
 Install dependencies
