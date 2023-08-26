@@ -1,7 +1,6 @@
 # DevFinder - FrontendMentor Challenge 
 
-
-This is a mobile application to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). 
+DevFinder is your gateway to GitHub. Developed with React Native and styled using NativeWind, it streamlines GitHub user search. This app is a challenge on [Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). Discover profiles, repositories, and connect with ease. Effortlessly explore the world of developers.
 
 ## Table of contents
   - [Built with](#built-with)
